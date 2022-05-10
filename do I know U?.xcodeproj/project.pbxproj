@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4943268D282AA242009694EE /* CelebImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4943268C282AA242009694EE /* CelebImageClassifier.mlmodel */; };
 		4962F8722827D1F2009AB085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962F8712827D1F2009AB085 /* AppDelegate.swift */; };
 		4962F8742827D1F2009AB085 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962F8732827D1F2009AB085 /* SceneDelegate.swift */; };
 		4962F8762827D1F2009AB085 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962F8752827D1F2009AB085 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4943268C282AA242009694EE /* CelebImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CelebImageClassifier.mlmodel; sourceTree = "<group>"; };
 		4962F86E2827D1F2009AB085 /* do I know U?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "do I know U?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4962F8712827D1F2009AB085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4962F8732827D1F2009AB085 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				4962F87C2827D1FB009AB085 /* LaunchScreen.storyboard */,
 				4962F87F2827D1FB009AB085 /* Info.plist */,
 				4962F8852827D225009AB085 /* Assets.xcassets */,
+				4943268C282AA242009694EE /* CelebImageClassifier.mlmodel */,
 			);
 			path = "do I know U?";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				4962F8762827D1F2009AB085 /* ViewController.swift in Sources */,
 				4962F8722827D1F2009AB085 /* AppDelegate.swift in Sources */,
 				4962F8742827D1F2009AB085 /* SceneDelegate.swift in Sources */,
+				4943268D282AA242009694EE /* CelebImageClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
