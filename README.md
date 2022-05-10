@@ -1,0 +1,2 @@
+Do I Know U? is an application that allows you to take/upload a photo of a celebrity to find out who they are.
+The goal of this project is to familiarize myself with using ML models in Swift as well as using Wiki API to fetch the data related to the actor. The image recognition is built using CreateML, at the moment the classifier only recognizes three actors (for testing purposes the model was trained on small amount of data, so the accuracy is not ideal).
