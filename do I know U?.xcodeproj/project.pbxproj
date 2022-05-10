@@ -10,6 +10,9 @@
 		4943268D282AA242009694EE /* CelebImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4943268C282AA242009694EE /* CelebImageClassifier.mlmodel */; };
 		4943268F282AD2B0009694EE /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943268E282AD2B0009694EE /* ResultViewController.swift */; };
 		49432691282AD372009694EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49432690282AD372009694EE /* Constants.swift */; };
+		49432696282AD800009694EE /* WikiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49432695282AD800009694EE /* WikiManager.swift */; };
+		49432699282AD818009694EE /* WikiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49432698282AD818009694EE /* WikiData.swift */; };
+		4943269B282AD82C009694EE /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943269A282AD82C009694EE /* Results.swift */; };
 		4962F8722827D1F2009AB085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962F8712827D1F2009AB085 /* AppDelegate.swift */; };
 		4962F8742827D1F2009AB085 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962F8732827D1F2009AB085 /* SceneDelegate.swift */; };
 		4962F8762827D1F2009AB085 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962F8752827D1F2009AB085 /* HomeViewController.swift */; };
@@ -24,6 +27,9 @@
 		4943268C282AA242009694EE /* CelebImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CelebImageClassifier.mlmodel; sourceTree = "<group>"; };
 		4943268E282AD2B0009694EE /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		49432690282AD372009694EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		49432695282AD800009694EE /* WikiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiManager.swift; sourceTree = "<group>"; };
+		49432698282AD818009694EE /* WikiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiData.swift; sourceTree = "<group>"; };
+		4943269A282AD82C009694EE /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		4962F86E2827D1F2009AB085 /* do I know U?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "do I know U?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4962F8712827D1F2009AB085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4962F8732827D1F2009AB085 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +88,16 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49432697282AD804009694EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49432695282AD800009694EE /* WikiManager.swift */,
+				49432698282AD818009694EE /* WikiData.swift */,
+				4943269A282AD82C009694EE /* Results.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4962F8652827D1F2009AB085 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,7 @@
 			children = (
 				4962F8712827D1F2009AB085 /* AppDelegate.swift */,
 				4962F8732827D1F2009AB085 /* SceneDelegate.swift */,
+				49432697282AD804009694EE /* Model */,
 				49432692282AD3B5009694EE /* Controller */,
 				49432693282AD3BC009694EE /* View */,
 				49432694282AD3D7009694EE /* Supporting Files */,
@@ -121,7 +138,6 @@
 				5269AC912A0F87106B0298FD /* Pods-do I know U?.debug.xcconfig */,
 				5C52A3C5C9563219758270D1 /* Pods-do I know U?.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,8 +260,11 @@
 				4962F8762827D1F2009AB085 /* HomeViewController.swift in Sources */,
 				4962F8722827D1F2009AB085 /* AppDelegate.swift in Sources */,
 				4962F8742827D1F2009AB085 /* SceneDelegate.swift in Sources */,
+				49432696282AD800009694EE /* WikiManager.swift in Sources */,
 				4943268D282AA242009694EE /* CelebImageClassifier.mlmodel in Sources */,
+				4943269B282AD82C009694EE /* Results.swift in Sources */,
 				49432691282AD372009694EE /* Constants.swift in Sources */,
+				49432699282AD818009694EE /* WikiData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

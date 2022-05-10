@@ -88,30 +88,57 @@
         <!--Result View Controller-->
         <scene sceneID="JCc-d7-K1w">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Fss-yk-0cn" customClass="ResultViewController" customModule="do_I_know_U_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" modalPresentationStyle="fullScreen" id="Fss-yk-0cn" customClass="ResultViewController" customModule="do_I_know_U_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xyY-yp-qae">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kB0-47-tDB">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kB0-47-tDB">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="qoy-wi-t7M"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwr-bw-wPw">
+                                <rect key="frame" x="20" y="542" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="iiN-T4-jrs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GgY-WJ-rpk">
+                                <rect key="frame" x="20" y="88" width="374" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="jd6-b7-2ps"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZVn-2V-cBH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GgY-WJ-rpk" firstAttribute="leading" secondItem="ZVn-2V-cBH" secondAttribute="leading" constant="20" id="5C2-04-Ora"/>
+                            <constraint firstItem="ZVn-2V-cBH" firstAttribute="trailing" secondItem="GgY-WJ-rpk" secondAttribute="trailing" constant="20" id="61I-Fq-OZ3"/>
+                            <constraint firstItem="mwr-bw-wPw" firstAttribute="leading" secondItem="ZVn-2V-cBH" secondAttribute="leading" constant="20" id="7Uo-Pe-wg6"/>
+                            <constraint firstItem="GgY-WJ-rpk" firstAttribute="top" secondItem="kB0-47-tDB" secondAttribute="bottom" id="G6O-gq-fG5"/>
+                            <constraint firstItem="kB0-47-tDB" firstAttribute="top" secondItem="ZVn-2V-cBH" secondAttribute="top" id="WKP-iG-3du"/>
+                            <constraint firstItem="ZVn-2V-cBH" firstAttribute="trailing" secondItem="mwr-bw-wPw" secondAttribute="trailing" constant="20" id="aSy-LC-hls"/>
+                            <constraint firstItem="kB0-47-tDB" firstAttribute="leading" secondItem="ZVn-2V-cBH" secondAttribute="leading" id="hKs-Up-fRP"/>
+                            <constraint firstItem="ZVn-2V-cBH" firstAttribute="bottom" secondItem="mwr-bw-wPw" secondAttribute="bottom" constant="20" id="hrN-p8-Hiq"/>
+                            <constraint firstItem="kB0-47-tDB" firstAttribute="centerX" secondItem="GgY-WJ-rpk" secondAttribute="centerX" id="i6s-dd-eqp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vKm-to-0Wx"/>
                     <connections>
+                        <outlet property="extractLabel" destination="mwr-bw-wPw" id="dv1-Pi-epl"/>
+                        <outlet property="imageView" destination="GgY-WJ-rpk" id="2NU-1q-0df"/>
                         <outlet property="navigationTitle" destination="qoy-wi-t7M" id="23A-QH-of3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fT4-mK-4Is" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="94"/>
+            <point key="canvasLocation" x="773.91304347826087" y="93.75"/>
         </scene>
     </scenes>
     <resources>
