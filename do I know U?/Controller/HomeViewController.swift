@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  do I know U?
 //
 //  Created by Татьяна on 08.05.2022.
@@ -9,7 +9,8 @@ import UIKit
 import CoreML
 import Vision
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var galleryButton: UIButton!
     @IBOutlet weak var takePhotoButton: UIButton!
@@ -34,14 +35,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let ciImage = CIImage(image: userPickerImage) else {
                 fatalError("Could not convert selected image into CIImage")
             }
-            
             detect(celebImage: ciImage)
-            
-            
             
         }
         
         picker.dismiss(animated: true, completion: nil)
+        //present Result View Controller
+        performSegue(withIdentifier: K.segueName, sender: self)
         
     }
     
@@ -71,14 +71,55 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func chooseFromGalleryPressed(_ sender: UIButton) {
-        //print("gallery")
+        
         present(imagePickerGallery, animated: true, completion: nil)
 
     }
     
     @IBAction func takePhotoPressed(_ sender: UIButton) {
-        //print("take photo")
+        
         present(imagePickerCamera, animated: true, completion: nil)
     }
+    
+    
+//    func requestInfo(flowerName: String) {
+//        let parameters : [String:String] = [
+//            "format" : "json",
+//            "action" : "query",
+//            "prop" : "extracts|pageimages",
+//            "exintro" : "",
+//            "explaintext" : "",
+//            "titles" : flowerName,
+//            "indexpageids" : "",
+//            "redirects" : "1",
+//            "pithumbsize" : "500"
+//        ]
+//        AF.request(wikipediaURL, method: .get, parameters: parameters).responseData { (response) in
+//            switch response.result {
+//
+//
+//            case .success(let data):
+//                do {
+//
+//                    let flowerJSON = try JSON(data: data)
+//                    let pageid = flowerJSON["query"]["pageids"][0].stringValue
+//
+//                    let flowerDescription = flowerJSON["query"]["pages"][pageid]["extract"].stringValue
+//
+//                    let flowerImageURL = flowerJSON["query"]["pages"][pageid]["thumbnail"]["source"].stringValue
+//                    self.label.text = flowerDescription
+//                    self.imageView.sd_setImage(with: URL(string: flowerImageURL))
+//
+//
+//                } catch {
+//                    print(error)
+//                }
+//            case .failure:
+//                print("did not get the info")
+//            }
+//        }
+//    }
+    
+    
 }
 
